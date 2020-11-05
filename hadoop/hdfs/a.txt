@@ -1,0 +1,135 @@
+来的同学，先测试一下自己的网络，看看声音、画面是否ok
+ok的call 1
+
+8点开始上课
+
+大数据 call 1
+做it其他方向的 call 2
+非it的 call 3
+
+java se 
+
+老游 bruce
+	hadoop（hadoop、hive、hbase）、spark、flink
+	
+3次
+1,3,5晚上 8~10 2个小时
+
+课程安排：
+	hadoop 4
+	hive 3次
+	hbase 3次
+	flume 1次
+	游戏数仓 5次
+
+课程资料
+	课前资料
+	课后资料
+
+apache hadoop 原生 -》 bug、不兼容
+	apache hadoop 3.1.4
+	apache -> 可以根据自己公司的情况，对apache的源码做二次开发（nn）
+商用公司 -》 cloudera(bug修复、兼容性更好) \ hortonworks \ mapr
+	cdh\cm
+
+
+	分布式
+	主从架构
+		hdfs：namenode|datanode|secondarynamenode
+		mr
+		yarn：主从架构 资源分配
+node01
+	jps -> java进程 namenode|datanode|secondarynamenode
+node02
+	datanode
+node03
+	datanode
+
+============= node01 jps =============
+8113 SecondaryNameNode
+7826 NameNode 主：管理
+8387 ResourceManager ： 主，负责整个集群资源分配
+8997 Jps
+7946 DataNode 从：具体干活的人 -》 具体存储数据
+8508 NodeManager 从：具体干活的人 -》具体提供资源的角色 
+8653 JobHistoryServer
+============= node02 jps =============
+7987 Jps
+7732 DataNode
+7848 NodeManager
+============= node03 jps =============
+7697 DataNode
+7811 NodeManager
+7951 Jps
+
+
+有一个文件：140m
+有几个块,每个块多大？
+
+
+namenode ha
+
+负载均衡
+
+[hadoop@node01 hadoop]$ hdfs dfs -ls /
+hadoop fs -ls /
+hdfs dfs -help cat
+
+Usage: hadoop fs [generic options]
+        [-appendToFile <localsrc> ... <dst>]
+        [-cat [-ignoreCrc] <src> ...]
+        [-checksum <src> ...]
+        [-chgrp [-R] GROUP PATH...]
+        [-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+        [-chown [-R] [OWNER][:[GROUP]] PATH...]
+        [-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] <localsrc> ... <dst>]
+        [-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] <path> ...]
+        [-cp [-f] [-p | -p[topax]] [-d] <src> ... <dst>]
+        [-createSnapshot <snapshotDir> [<snapshotName>]]
+        [-deleteSnapshot <snapshotDir> <snapshotName>]
+        [-df [-h] [<path> ...]]
+        [-du [-s] [-h] [-v] [-x] <path> ...]
+        [-expunge [-immediate]]
+        [-find <path> ... <expression> ...]
+        [-get [-f] [-p] [-ignoreCrc] [-crc] <src> ... <localdst>]
+        [-getfacl [-R] <path>]
+        [-getfattr [-R] {-n name | -d} [-e en] <path>]
+        [-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+        [-head <file>]
+        [-help [cmd ...]]
+        [-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+        [-mkdir [-p] <path> ...]
+        [-moveFromLocal <localsrc> ... <dst>]
+        [-moveToLocal <src> <localdst>]
+        [-mv <src> ... <dst>]
+        [-put [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+        [-renameSnapshot <snapshotDir> <oldName> <newName>]
+        [-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+        [-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+        [-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+        [-setfattr {-n name [-v value] | -x name} <path>]
+        [-setrep [-R] [-w] <rep> <path> ...]
+        [-stat [format] <path> ...]
+        [-tail [-f] [-s <sleep interval>] <file>]
+        [-test -[defsz] <path>]
+        [-text [-ignoreCrc] <src> ...]
+        [-touch [-a] [-m] [-t TIMESTAMP ] [-c] <path> ...]
+        [-touchz <path> ...]
+        [-truncate [-w] <length> <path> ...]
+        [-usage [cmd ...]]
+
+
+[hadoop@node01 hadoop]$ hdfs dfs -put yarn-site.xml /
+put: Cannot create file/yarn-site.xml._COPYING_. Name node is in safe mode.
+
+
+
+
+
+
+
+
+
+
+
