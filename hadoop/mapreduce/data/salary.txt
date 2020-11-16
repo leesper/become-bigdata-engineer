@@ -1,0 +1,7 @@
+tom	20	8000
+nancy	22	8000
+ketty	22	9000
+stone	19	10000
+green	19	10000
+white	30	29000
+socrates	29	40000
