@@ -28,20 +28,6 @@ public class UserOrder implements WritableComparable<UserOrder> {
 
     @Override
     public int compareTo(UserOrder o) {
-//        int ret = getUserID().compareTo(o.getUserID());
-//        if (ret != 0) {
-//            return ret;
-//        }
-//
-//        ret = getYearMonth().compareTo(o.getYearMonth());
-//        if (ret != 0) {
-//            return ret;
-//        }
-//
-//        Double totalL = getPurchaseNum() * getUnitPrice();
-//        Double totalR = o.getPurchaseNum() * o.getUnitPrice();
-//
-//        return -totalL.compareTo(totalR);
         return 0;
     }
 
