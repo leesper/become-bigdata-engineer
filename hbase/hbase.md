@@ -25,12 +25,10 @@
 * HBase的读写流程
 * HBase表的region拆分和合并
 * HBase表的预分区
-* HBase集成MapReduce
-* HBase集成Hive
+* HBase集成MapReduce或Hive
+* HBase表的rowkey设计原则
 
-* HBase表的rowkey设计
-
-* HBase表的热点
+* HBase表的热点以及解决方案
 
 ## 思考题
 
