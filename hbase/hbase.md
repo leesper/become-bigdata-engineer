@@ -76,3 +76,5 @@
 使用MR编程，将firsttable表的数据读出来，写入一个HDFS文件/user/hadoop/firsttable.txt
 
 提示：hbase第三次课讲了MR读HBase表，结果写入另外一个HBase表；也讲了MR读取HDFS文件，结果写入一个HBase表。本作业需要实现MR读HBase表；然后结果写入HDFS
+
+答：参见HBaseDemo代码
